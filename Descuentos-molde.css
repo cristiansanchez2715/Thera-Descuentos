@@ -1,0 +1,226 @@
+body {
+    background-color: #6e706a;
+    
+}
+
+.lista1{
+    padding: 20px;
+    margin: 0px;
+    color: white;
+    background-color: rgb(16, 16, 16);
+    transition: all .5s case;
+    cursor: pointer;
+}
+
+.lista1.activo{ 
+   
+    background: #222;;
+    
+ }
+ 
+.seccion{
+    opacity: 0;
+    transition: all .5s case;
+    display: none;
+    background-image: linear-gradient(to top, #0b0b0b, #232425, #383c3d, #505653, #6e706a);
+    color:  #cfd3c8
+}
+    .seccion.activo{
+    opacity: 1;
+display: block;
+position: relative;
+}
+
+
+#inicio-container{
+    height: 450px;
+}
+#contenedor-footer{
+    background-color: black;
+    color: white;
+    width: 100vw;
+    height: 20%;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    
+}
+#footer{
+ margin-left: 550px;
+ font-size: 25px;
+}
+
+h6{
+    font-size: 35px;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-left: 600px;
+}
+
+.inicio{
+    font-size: 25px;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-left: 450px;
+}
+
+#menu{
+    width: 100vw;
+}
+
+
+@media (min-width: 1028px){
+    #descuentoPersonalizado-container {
+             margin-left: 550px;
+             background-color: #646660;
+             width: 400px;
+             height: 550px;
+             justify-content: center;
+             align-items: center            
+            }
+
+            #descuentoPersonalizado{
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                font-size: 25px;
+            }
+
+            #tuDescuento{
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                font-size: 25px;
+            }
+h4{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 35px;
+}
+
+#calcular2{
+    background-color: #6e706a;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#result{
+    color: black;
+    font-size: 20px;
+}
+
+#descuentosRapidos-container{
+    margin-left: 450px;
+    background-color: #646660;
+    width: 700px;
+    height: 450px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px; 
+}
+.divisionDescuentosRapidos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#botonNuevo{
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+}
+
+#logo{
+    width: 80px;
+    height: 120px;
+    margin-left: 45%;
+}
+
+h5 {
+   
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 35px; 
+    color:  #cfd3c8
+}
+
+
+
+.botonDescuento{
+    background-color: #6e706a;
+    color: white;
+    padding: 10px;
+    height: 80px;
+    width: 80px;
+    margin: 20px;
+    border-radius: 50%;
+    transform-style: preserve-3d;
+    animation: rotateY 1s forwards;
+}
+.botonDescuento:hover{
+    
+    animation: rotateYBack 2s forwards;
+}
+
+
+@keyframes rotateY {
+    from{
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+@keyframes rotateYBack {
+    from {
+        transform: rotateY(180deg);
+
+    }
+
+to {
+    transform: rotateY(0deg);
+}
+
+}
+
+
+#listaArticulos-container{
+    display: flex;
+    flex-direction: row;
+    background-color: aliceblue;
+    width: 600px;
+    height: 800px;
+    margin-left: 450px;
+    background-color: #646660;
+}
+#buscadorLista{
+    display: flex;
+    flex-direction: column;
+    background-color: #646660;
+}
+
+#agregarProducto-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #646660;
+}
+#formulario{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    background-color: #646660;
+}
+.formulario{
+    margin: 10px;
+    font-size: 20px;
+}
+
+        }

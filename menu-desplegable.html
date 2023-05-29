@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="./Descuentos-molde.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span id="btnMenu" class="nav-bar">Menu</span>
+    <nav id="main-nav">
+        <ul class="menu" id="menu">
+          <li class="lista1 activo"><a class="menu__link">Inicio</a></li>
+          <li class="lista1"><a class="menu__link">Personalizado</a></li>
+
+
+          <li class="lista1"><a href="#" class="menu__link submenu-btn">Rapido</a>
+           
+        </li>
+
+          <li class="lista1"><a class="menu__link">Listados</a></li>
+          <img id="logo" src="./LogoCabecera.png">
+        </ul>
+        
+    </nav>
+
+    
+    <section class="seccion activo">
+        <div id="inicio-container">
+    <h6>Thera Descuentos </h6>
+    <p class="inicio">Thera Descuentos es una herramienta digital para realizar los descuentos<br> de su negocio de una forma rapida y efectiva.</p>
+    
+    <p class="inicio">En ella encontrara distintas herramientas con el fin de<br> Descontar al instante.</p>
+    
+</div>
+</section>
+
+
+
+
+
+
+
+
+    <section class="seccion">
+
+        <div id="descuentoPersonalizado-container"> 
+          <h4>DESCUENTO PERSONALIZADO</h4>
+   <div id="descuentoPersonalizado">   
+  <h1>Precio que tenga en mente?</h1>
+  <p>Precio del articulo</p>
+  <input id="price"type="number" >
+  </div>
+  <div id="tuDescuento"> 
+      <p>Descuento a realizar</p>
+  <input id="discount"type="number" i>
+      <button id="calcular2">Calcular</button>
+      <p id="result"></p>
+  </div>
+  </div>
+    <br><br><br><br>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+    <section class="seccion">
+           
+    
+<div id="descuentosRapidos-container">
+    
+<h5> Descuentos Rapidos </h5>
+    <div class="divisionDescuentosRapidos">
+    <h2>10%</h2>
+    <button id="boton1" class="botonDescuento">descuento 1</button>
+    <p id="result1"></p>
+
+    <h2>20%</h2>
+    <button id="boton2" class="botonDescuento">descuento 2</button>
+    <p id="result2"></p>
+
+    <h2>30%</h2>
+    <button id="boton3" class="botonDescuento">descuento 3</button>
+    <p id="result3"></p>
+</div> <div  class="divisionDescuentosRapidos"> 
+    <h2>40%</h2>
+    <button id="boton4" class="botonDescuento">descuento 4</button>
+    <p id="result4"></p>
+
+    <h2>50%</h2>
+    <button id="boton5" class="botonDescuento">descuento 5</button>
+    <p id="result5"></p>
+
+    <h2>60%</h2>
+    <button id="boton6" class="botonDescuento">descuento 6</button>
+    <p id="result6"></p>
+</div>
+    <div  class="divisionDescuentosRapidos"> 
+    <h2>70%</h2>
+    <button id="boton7" class="botonDescuento">descuento 7</button>
+    <p id="result7"></p>
+
+    <h2>80%</h2>
+    <button id="boton8" class="botonDescuento">descuento 8</button>
+    <p id="result8"></p>
+
+    <h2>90%</h2>
+    <button id="boton9" class="botonDescuento">descuento 9</button>
+    <p id="result9"></p>
+</div>
+</div>   
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <section class="seccion"><h4>Thera Discounter <img src=""> </h4>
+        <div id="listaArticulos-container">
+            <div id="listaArticulos">
+                <div id="lista">
+            <h3> Articulos precio fijo</h3> 
+            <ul id="ul">
+        <li >bicicleta</li><br><p id="Pbicicleta"></p>
+        <li >patineta</li><br><p id="Ppatineta"></p>
+        <li >patines</li<><br><p id="Ppatines"></p>
+        <li >monopatin</li><br><p id="Pmonopatin"></p>
+        <li >monociclo</li><br><p id="Pmonociclo"></p>
+        <li >BMX</li><br><p></p id="Pbmx">
+        
+            
+    </ul></div>
+    <div id="buscadorLista">
+      <p id="resultadoPersonalizado"></p>
+        <p>Escriba el nombre de uno de los articulos de la lista</p>
+        <input id="articulo" type="text"> 
+        <button id="calcular">calcular</button>
+    <p>seleccione su descuento (1 - 100%)</p>
+        <input id="descuento" type="number">
+    </div>
+</div>
+    <div id="agregarProducto-container">
+        <form action="" id="formulario"> 
+        </h2 class="formulario" >Deseas Agregar un Producto a el estante?</h2>-
+        <button class="formulario" id="botonNuevo">Agregar Producto</button>
+    
+        <p id="productosCreadosResult"></p>
+        </form>
+    </div>
+    </div>
+    </section>
+
+    <footer>
+        <div id="contenedor-footer">
+          <p id="footer">  Descuentos al instante con Thera Descuentos</p>
+
+        </div>
+    </footer>
+
+    <style>
+      *{
+        box-sizing: border-box;
+
+      }
+
+
+      body{
+        margin: 0;
+      }
+
+     .nav-bar{
+        background: #161515;
+        padding: 20px;
+        display: block;
+        color: white;
+        cursor: pointer;
+        font-size: 1.5em;
+        width: 100vw;
+
+     }
+
+     .menu, .submenu{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+     }
+
+     .menu {
+        background: #222;
+        width: 100%;
+        margin-left: -100%;
+        transition: all 0.5s;
+     }
+    .menu__link{
+        display: block;
+        padding: 30px;
+        color: white;
+        font-size: 1.2em;
+        text-decoration: none;
+    }
+
+    .menu__link:hover{
+        background-color: #222;
+    }
+
+    .submenu {
+        height: 0;
+        overflow: hidden;
+        transition: all 0.3s;
+    }
+
+    .submenu .menu__link{
+        background: #161515;
+        padding-left: 30px;
+}
+
+.mostrar{
+    margin-left: 0;
+
+}
+
+@media(min-width: 1024px){
+    .nav-bar{
+        display: none;
+    }
+    .menu {
+        margin-left: 0;
+        display: flex;
+    }
+
+    .container-submenu{
+        position: relative;
+    }
+    .menu__item container-submenu{
+ position: relative;
+ }
+
+    .submenu{
+        position: absolute;
+        top: 80px;
+        width: 170px;
+         overflow: visible;
+        left: -5%;
+        
+        z-index: 1000;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .container-submenu:hover .submenu  {
+            opacity: 1;
+            visibility: visible;
+            cursor: pointer;
+            background-color: #555;
+    }
+
+
+}
+
+
+    </style>
+    <script>
+        const btnMenu = document.querySelector("#btnMenu")
+        const menu = document.querySelector("#menu")
+        btnMenu.addEventListener("click", function(){
+            menu.classList.toggle("mostrar");
+        } 
+        )
+
+        const submenuBtn = document.querySelectorAll(".submenu-btn ")
+        for(let i = 0; i < submenuBtn.length; i++){
+            submenuBtn[i].addEventListener("click", function(){
+                if(window.innerWidth < 1024){
+                    const subMenu = this.nextElementSibling;
+                    const height = subMenu.scrollHeight;
+                 if(subMenu.classList.contains("desplegar")){
+                    subMenu.classList.remove("desplegar")
+                    subMenu.removeAttribute("style")
+                 }else { 
+
+                 subMenu.classList.add("desplegar")
+                 subMenu.style.height = height + "px";
+                }}
+            })
+        }
+    </script>
+    <script src="./Descuentos-molde.js"></script>
+</body>
+</html>
